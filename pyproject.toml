@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "control-trace-lite"
+version = "0.1.2"
+description = "Minimal mandatory-control completion guard for cooperative AI agent runtimes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Community contributors"}]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[tool.setuptools.packages.find]
+include = ["control_trace*"]
