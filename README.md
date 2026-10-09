@@ -79,6 +79,7 @@ A simple Python condition can also detect missing steps. Control Trace Lite expl
 That practical value remains an open research question.
 
 ## Help us find unexpected cases
+**Want to test the library?** Join our [Good First Experiment (Issue #1)](https://github.com/taeyoonypapa/control-trace-lite/issues/1). Run the demo, change one behavior, and share what happens.
 
 We welcome independently reproducible examples involving:
 
