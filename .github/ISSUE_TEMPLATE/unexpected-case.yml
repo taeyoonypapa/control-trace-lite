@@ -1,0 +1,43 @@
+
+name: Unexpected control-trace case
+description: Report a reproducible omission, false alarm, or bypass
+title: "[Case] "
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Observed category
+      options:
+        - Missing control with missing receipt
+        - Control executed but receipt missing
+        - Receipt present but control ineffective
+        - Direct output bypassed finalize
+        - Retry or state edge case
+        - Other or uncertain
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproducible example
+      description: Provide redacted code or steps. Never include secrets.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected versus observed result
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Independent evidence and limitations
+
+  - type: input
+    id: environment
+    attributes:
+      label: Python version and agent runtime
